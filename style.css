@@ -1,0 +1,37 @@
+#input-container {
+    background-color: #CCC1FF;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+#input-field {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px, solid, white;
+    background-color: #CCC1FF;
+}
+
+#convert-btn {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#conversions-container {
+
+}
+
+.conversions-field {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
