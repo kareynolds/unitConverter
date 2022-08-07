@@ -12,6 +12,12 @@ function convertBtn() {
         let feet = convertUnit * .03048 * 10
 
         let lengthConverted = document.getElementById("length-converted");
+
+        lengthConverted.innerHTML = `
+        
+        ${convertUnit} meters = ${feet} feet | ${convertUnit} feet = ${meters} meters
+
+        `
     
         console.log(meters);
         console.log(feet);
