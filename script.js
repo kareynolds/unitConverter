@@ -15,7 +15,7 @@ function convertBtn() {
 
         lengthConverted.innerHTML = `
         
-        ${convertUnit} meters = ${feet} feet | ${convertUnit} feet = ${meters} meters
+        ${convertUnit} meters = ${ Number(feet).toFixed(2)} feet | ${convertUnit} feet = ${ Number(meters).toFixed(2)} meters
 
         `
     
@@ -24,14 +24,46 @@ function convertBtn() {
         
     }
     convertLength() 
+
+
     
     function convertVolume() {
+        // 1 liter = .264 gallon
+        let liters = convertUnit * 4.546
+        let gallons = convertUnit * .264
+
+        let volumeConverted = document.getElementById("volume-converted")
+
+        volumeConverted.innerHTML = `
+        
+        ${convertUnit} liters = ${ Number(gallons).toFixed(2)} Gallons  |  ${convertUnit} Gallons = ${ Number(liters).toFixed(2)} Liters
+        
+        `
+
+        console.log(liters)
+        console.log(gallons)
+
     
     }
+    convertVolume();
+
     
     function convertMass() {
+        // 1 kilogram = 2.204 pounds
+
+        let pounds = convertUnit / 2.205
+        let kilograms = convertUnit * 2.204
+
+        let massConverted = document.getElementById("mass-converted")
+
+        massConverted.innerHTML = `
+        
+        ${convertUnit} Pounds = ${ Number(pounds).toFixed(2)} Kilograms | ${convertUnit} Kilograms = ${ Number(kilograms).toFixed(2)} Pounds
+        
+        `
     
     }
+    convertMass()
     
 
     console.log(convertUnit);
