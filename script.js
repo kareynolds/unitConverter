@@ -33,3 +33,27 @@ function convertBtn() {
     }
     convertMass()
 }
+
+
+function resetBtn() {
+
+    function resetVolume() {
+        let volumeConverted = document.getElementById("volume-converted")
+        volumeConverted.innerHTML = "Volume Units:" 
+    }
+    resetVolume()
+
+    function resetLength() {
+        let volumeConverted = document.getElementById("length-converted")
+        volumeConverted.innerHTML = "Length Units:"
+    }
+    resetLength()
+
+    function resetMass() {
+        let volumeConverted = document.getElementById("mass-converted")
+        volumeConverted.innerHTML = "Mass Units:"
+    }
+    resetMass()
+
+
+}
